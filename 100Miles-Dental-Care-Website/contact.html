@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>100Miles Dental Care</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<h1>100Miles Dental Care</h1>
+		</header>
+		
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="service.html">Services</a>
+				<a href="staff.html">Our Staffs</a>
+				<a href="article.html">Articles</a>
+				<a href="announcement.html">Announcements</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
+		
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="service.html">Services</a></li>
+				<li><a href="staff.html">Our Staffs</a></li>
+				<li><a href="article.html">Articles</a></li>
+				<li><a href="announcement.html">Announcements</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<main>
+			<div id="contact">
+				<h2>Ready to get started? Contact us Today</h2>
+				<h3>Call us: <a href="tel:0750005599">07 5000 5599</a></h3>
+				<h3>Fax: <a href="tel:0745679999">07 4567 9999</a></h3>
+				<h3>Email us: <a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></h3>
+				<h3>Visit us at: 33 Fantail Street, Razole , Queensland</h3>
+			</div>
+			<div id="trading_hours">
+				<h2>Trading hours</h2>
+				<h3>Monday – Friday: 8:30am - 6:30pm</h3>
+				<h3>Saturday – Sunday: 8:30am-1pm</h3>
+			</div>
+
+			<div>
+				<h1 style="text-align:center; padding-top: 2%;">Complete the form below to book your checkup!</h1>
+				<form name="my_form" class="form-grid" action="submit.html" onsubmit="return validateForm()"> <!--Start Form-->
+					<section class="form">
+						<section>
+							<fieldset>
+								<legend>User Information</legend>
+								<label for="fName">First Name:</label>
+								<input type="text" name="fName" id="fName">
+								<p></p>
+								
+								<label for="lName">Last Name:</label>
+								<input type="text" name="lName" id="lName">
+								<p></p>
+							
+								<label for="email">Email:</label>
+								<input type="email" name="email" id="email">
+								<p></p>
+								
+								<label for="phone">Phone:</label>
+								<input type="tel" id="phone" name="phone">
+								<p></p>
+								
+								<label for="gender">Gender:</label>
+								<select name="gender">
+									<option name="female">F</option>
+									<option name="male">M</option>
+								</select>
+							</fieldset>
+						</section>
+						<section>
+							<fieldset>
+								<legend>Additional Information</legend>
+								<p>Select your appointment time and date:</p>
+								<label for="date">Select your appointment date: </label>
+								<input type="date" id="date" name="date">
+								
+								<p></p>
+								<label for="time">Select your appointment time: </label>
+								<input type="time" id="time" name="time">
+								
+								<p></p>
+								<label for="service">What kind of service are you looking for?</label>
+								<p></p>
+								<select name="service" id="service">
+									<option value="physical">Physical Examination</option>
+									<option value="cleaning">Cleanings</option>
+									<option value="xray">X-Rays</option>
+									<option value="dental">Dental Check-Up</option>
+									<option value="nutrional">Nutritional Guidance</option>
+									<option value="blood">Blood Tests or Laboratory Work</option>
+								</select>
+							</fieldset>
+						</section>
+						<section>
+							<fieldset>
+								<legend>Referral Source</legend>
+								<label for="reference">How did you find us?</label>
+								<select name="reference" id="reference">
+									<option value="ad">Advertisement</option>
+									<option value="friend">Friend</option>
+									<option value="google">Google</option>
+									<option value="social">Social Media</option>
+									<option value="other">Other</option>
+								</select>
+								
+								<p></p>
+								<label for="questions">Questions?</label>
+								<p></p>
+								<textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+							</fieldset>
+						</section>
+					</section>
+					
+					<input type="submit" id="submit" value="Submit" class="btn">
+				</form>
+			</div>
+			
+		</main>
+		
+		<footer><br>
+			<p>&copy; Copyright 2025. All Rights Reserved.</p>
+			<p><a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></p>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,366 @@
+/* CSS */
+
+/* CSS reset */
+body, header, nav, main, footer, h1, div, img, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background-color: #99E7FF;
+	padding-right: 3%;
+	padding-left: 3%;
+}
+
+header {
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 3em;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+}
+
+nav {
+	width: 100%;
+	height: 75px;
+	text-align: center;
+	background-color: #ADADAD;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	clear: both;
+	background-color: #FFC6EE;
+	padding: 3%;
+	padding-right: 5%;
+	padding-left: 5%;
+	font-size: 1.25em;
+	font-family: Calibri;
+}
+
+footer p {
+	font-size: 0.75em;
+	text-align: center;
+	color: #fff;
+	padding: 0 1em;
+}
+
+footer p a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 1.5em;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: bold;
+}
+
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.5em 1em 0.5em 1em;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.mobile-nav {
+	display: none;
+}
+
+#intro, #service, #mission {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#intro img, #service img, #mission img {
+	max-width: 40%;
+	margin: auto;
+}
+
+#dental_tech img {
+	border-radius: 30px;
+}
+
+.digital_xray, .intraoral_cameras, .laser_dentistry, .cad_cam, .threed_printing, .teledentistry {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 35px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+#annual_checkup {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color: #f2f2f2;
+	padding: 1% 2%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+#staffs {
+	width: 100%;
+	text-align: center;
+}
+
+#staffs img {
+	border-radius: 50px;
+	max-width: 50%;
+	margin: auto;
+}
+
+#staff_1 {
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+.meet {
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+#specialist {
+	background-color: #99E7FF;
+}
+
+.specialist_1, .specialist_2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 35px;
+}
+
+.specialist_1 img, .specialist_2 img {
+	max-width: 28%;
+	margin: auto;
+}
+
+.specialist_1 section, .specialist_2 section {
+	padding-right: 4%;
+	padding-left: 4%;
+}
+
+#interesting {
+	text-align: center;
+}
+
+#interesting a {
+	color: #800080;
+	text-decoration: none;
+}
+
+#interesting h3 {
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+#interesting img {
+	clip-path: ellipse(50% 50%);
+	width: 66%;
+	margin: auto;
+}
+
+.interesting_1, .interesting_2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 35px;
+}
+
+.free_checkup {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 35px;
+	text-decoration: none;
+}
+
+#contact, #trading_hours {
+	text-align: center;
+	background-color: #FF84B5;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+#contact {
+	border-bottom: 3px solid #000;
+}
+
+#trading_hours {
+	border-top: 3px solid #000;
+}
+
+#contact a {
+	color: #666600;
+	text-decoration: none;
+}
+
+.friendly {
+	font-size: 1.35em;
+	color: #4800FF;
+	font-weight: bold;
+}
+
+.form {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 35px;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 630px) { 
+	/* Hamburger */
+	header {
+		display: none;
+	}
+	
+	body {
+		padding: 0;
+	}
+	
+	nav {
+		display: none;
+	}
+	
+	.mobile-nav {
+		display: block;
+		font-weight: bold;
+		height: auto;
+		position: fixed;
+		z-index: 1000;
+	}
+	
+	.mobile-nav a {
+		color: #fff;
+		font-family: 'Francois', sans-serif;
+		text-align: center;
+		font-size: 2em;
+		text-decoration: none;
+		padding: 3%;
+		display: block;
+	}
+
+	.mobile-nav a.menu-icon {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	#menu-links {
+		display: none;
+	}
+
+	#intro img, #service img, #mission img {
+		display: none;
+	}
+	
+	.digital_xray, .intraoral_cameras, .laser_dentistry, .cad_cam, .threed_printing, .teledentistry {
+		text-align: center;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 35px;
+		padding-top: 10%;
+		padding-bottom: 0;
+	}
+	
+	.digital_xray p, .intraoral_cameras p, .laser_dentistry p, .cad_cam p, .threed_printing p, .teledentistry p {
+		display: none;
+	}
+	
+	#annual_checkup {
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+	
+	#staff_1 img {
+		max-width: 75%;
+	}
+	
+	#staff_1 p {
+		display: none;
+	}
+	
+	.specialist_1, .specialist_2, .interesting_1, .interesting_2, .free_checkup {
+		grid-template-columns: 1fr;
+	}
+	
+	
+	#specialist img, #interesting img {
+		max-width: 85%;
+		padding-bottom: 2%;
+	}
+	
+	#specialist p, #interesting p, .free_checkup img {
+		display: none;
+	}
+	
+	.form {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	header {
+		display: none;
+	}
+	
+	nav li {
+		font-size: 1em;
+	}
+
+	#intro img, #service img, #mission img {
+		display: none;
+	}
+	
+	#staff_1 img {
+		max-width: 66%;
+	}
+	
+	.free_checkup {
+		grid-template-columns: 1fr;
+	}
+	
+	
+	#specialist img, #interesting img {
+		max-width: 85%;
+		padding-bottom: 2%;
+	}
+	
+	#interesting p {
+		display: none;
+	}
+	
+	.free_checkup img {
+		margin: auto;
+		max-width: 50%;
+	}
+	
+	.form {
+		grid-template-columns: 1fr;
+	}
+}
