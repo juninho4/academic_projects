@@ -1,4 +1,4 @@
-# JCU Coursework
+# Description
 
 This repository contains the projects, assignments, and coursework I completed throughout my **university academic period**.
 
