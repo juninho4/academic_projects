@@ -8,7 +8,7 @@ A C++ implementation and performance analysis of an N-body gravitational simulat
 
 ## Overview
 
-This project explores how large-scale gravitational systems can be simulated efficiently using the Barnes-Hut algorithm, a huge template has been given for this assessment
+This project explores how large-scale gravitational systems can be simulated efficiently using the Barnes-Hut algorithm, **a huge template has been given for this assessment**.
 
 Instead of calculating gravitational forces between every pair of bodies, the Barnes-Hut algorithm organizes objects into a hierarchical tree structure, allowing distant groups of bodies to be approximated as a single mass. This significantly improves simulation performance for large numbers of particles.
 
